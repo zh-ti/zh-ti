@@ -3,7 +3,7 @@
 
   // 视频banner
   banner = document.querySelector("#banner");
-  let isPlayVideo = false;
+  let isPlayVideo = true && location.pathname === "/";
   // let isPlayVideo = JSON.parse(localStorage.getItem("play-video"));
   if (isPlayVideo) {
     banner.style.position = "relative";

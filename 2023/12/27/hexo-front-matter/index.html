@@ -16,27 +16,26 @@
   <meta name="author" content="TIAN">
   <meta name="keywords" content="dev,development,penestration,java">
   
-    <meta name="description" content="使用Hexo+gitpage的方式搭建了我的技术博客，我会在上面分享一些我在开发和安全方面的技术性文章，这篇文章我将介绍这个博客的搭建过程。">
+    <meta name="description" content="Hexo文章Front-matter用于设置文章的基础信息，例如：标题、简介、分类、标签、文章创建和修改日期等">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo Blog">
-<meta property="og:url" content="http://tblog.zh-ti.top/2023/12/26/join-in-hexo/index.html">
+<meta property="og:title" content="Hexo文章Front-matter编写规则">
+<meta property="og:url" content="http://tblog.zh-ti.top/2023/12/27/hexo-front-matter/index.html">
 <meta property="og:site_name" content="TBlog">
-<meta property="og:description" content="使用Hexo+gitpage的方式搭建了我的技术博客，我会在上面分享一些我在开发和安全方面的技术性文章，这篇文章我将介绍这个博客的搭建过程。">
+<meta property="og:description" content="Hexo文章Front-matter用于设置文章的基础信息，例如：标题、简介、分类、标签、文章创建和修改日期等">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://tblog.zh-ti.top/2023/12/26/join-in-hexo/images/1.jpg">
-<meta property="og:image" content="http://tblog.zh-ti.top/2023/12/26/join-in-hexo/images/image-20231226230550295.jpg">
-<meta property="article:published_time" content="2023-12-26T03:11:21.743Z">
-<meta property="article:modified_time" content="2023-12-26T15:25:24.675Z">
+<meta property="og:image" content="http://tblog.zh-ti.top/images/banners/banner2.jpg">
+<meta property="article:published_time" content="2023-12-27T13:02:49.000Z">
+<meta property="article:modified_time" content="2023-12-27T13:29:41.089Z">
 <meta property="article:author" content="TIAN">
-<meta property="article:tag" content="dev,development,penestration,java">
+<meta property="article:tag" content="hexo">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://tblog.zh-ti.top/2023/12/26/join-in-hexo/images/1.jpg">
+<meta name="twitter:image" content="http://tblog.zh-ti.top/images/banners/banner2.jpg">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>Hexo Blog - TBlog</title>
+  <title>Hexo文章Front-matter编写规则 - TBlog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -214,13 +213,13 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
+     style="background: url('/images/banners/banner2.jpg') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hexo Blog"></span>
+            <span id="subtitle" data-typed-text="Hexo文章Front-matter编写规则"></span>
           
         </div>
 
@@ -231,8 +230,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-12-26 11:11" pubdate>
-          2023年12月26日 上午
+        <time datetime="2023-12-27 21:02" pubdate>
+          2023年12月27日 晚上
         </time>
       </span>
     
@@ -243,7 +242,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          97 字
+          255 字
         
       </span>
     
@@ -254,7 +253,7 @@
         
         
         
-          1 分钟
+          3 分钟
         
       </span>
     
@@ -291,22 +290,13 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">Hexo Blog</h1>
+            <h1 id="seo-header">Hexo文章Front-matter编写规则</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="Hexo-Fluid-博客搭建博客"><a href="#Hexo-Fluid-博客搭建博客" class="headerlink" title="Hexo&amp;Fluid 博客搭建博客"></a>Hexo&amp;Fluid 博客搭建博客</h1><h2 id="安装-Node-和-NPM"><a href="#安装-Node-和-NPM" class="headerlink" title="安装 Node 和 NPM"></a>安装 Node 和 NPM</h2><ol>
-<li><p>前往<a target="_blank" rel="noopener" href="https://nodejs.org/en/download/current">Node 官网</a>下载 Node 安装包，建议下载LTS版本，也就是长期支持版本</p>
-<p><img src="./images/1.jpg" srcset="/img/loading.gif" lazyload alt="1"></p>
-</li>
-<li><p>安装 Node（安装过程一路下一步就可以了）</p>
-</li>
-<li><p>安装完毕之后，按<code>Win+R</code> 输入<code>cmd</code> ，在弹出的命令行中输入<code>node --version</code> 和<code>npm --version</code>，如果打印出版本信息那么恭喜你安装成功了！</p>
-<p><img src="./images/image-20231226230550295.jpg" srcset="/img/loading.gif" lazyload alt="image-20231226230550295"></p>
-</li>
-<li></li>
-</ol>
+                <h2 id="Hexo-文章-Front-matter-编写规则"><a href="#Hexo-文章-Front-matter-编写规则" class="headerlink" title="Hexo 文章 Front-matter 编写规则"></a>Hexo 文章 Front-matter 编写规则</h2><p>本文参考了 Hexo 官方的<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/front-matter">Front-matter 编写规则</a>，但是本文只介绍几个常用的规则。<br>Hexo Front-matter 是文章的最上方，使用<code>---</code> 分割的区域，在其中设置文章的基础信息。<br>常用的规则及其作用如下：</p>
+<figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">title:</span> <span class="hljs-string">Hexo文章Front-matter编写规则</span> <span class="hljs-comment"># 文章标题</span><br><span class="hljs-attr">excerpt:</span> <span class="hljs-string">Hexo文章Front-matter用于设置文章的基础信息，例如：标题、简介、分类、标签、文章创建和修改日期等</span> <span class="hljs-comment"># 文章摘要</span><br><span class="hljs-attr">index_img:</span> <span class="hljs-string">/images/default.png</span> <span class="hljs-comment">#文章封面</span><br><span class="hljs-attr">banner_img:</span> <span class="hljs-string">/images/default.png</span> <span class="hljs-comment">#顶部大图</span><br><span class="hljs-attr">date:</span> <span class="hljs-number">2023-12-16 12:00:00</span> <span class="hljs-comment">#文章日期</span><br><span class="hljs-attr">updated:</span> <span class="hljs-number">2023-12-16 18:00:00</span> <span class="hljs-comment">#文章更新日期</span><br><span class="hljs-attr">hide:</span> <span class="hljs-literal">false</span> <span class="hljs-comment"># 是否隐藏文章</span><br><span class="hljs-attr">active:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># 让文章在首页隐藏，在归档中仍然显示</span><br><span class="hljs-attr">sticky:</span> <span class="hljs-number">1</span> <span class="hljs-comment"># 设置文章显示优先级，值越大越靠前</span><br><span class="hljs-attr">comments:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># 是否允许评论</span><br><span class="hljs-attr">published:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># 文章是否发布</span><br><span class="hljs-attr">categories:</span> <span class="hljs-comment"># 文章分类</span><br>  <span class="hljs-bullet">-</span> [<span class="hljs-string">Fluid</span>, <span class="hljs-string">Hexo</span>] <span class="hljs-comment"># 父分类</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">教程</span> <span class="hljs-comment"># 子分类</span><br><span class="hljs-attr">tags:</span> <span class="hljs-comment"># 文章标签</span><br>  <span class="hljs-bullet">-</span> [<span class="hljs-string">教程</span>, <span class="hljs-string">Hexo</span>] <span class="hljs-comment"># 父标签</span><br>  <span class="hljs-bullet">-</span> <span class="hljs-string">文章</span> <span class="hljs-comment"># 子标签</span><br></code></pre></td></tr></tbody></table></figure>
 
                 
               </div>
@@ -315,6 +305,34 @@
             <div>
               <div class="post-metas my-3">
   
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/hexo/" class="category-chain-item">hexo</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/hexo/" class="print-no-link">#hexo</a>
+      
+    </div>
   
 </div>
 
@@ -324,8 +342,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hexo Blog</div>
-      <div>http://tblog.zh-ti.top/2023/12/26/join-in-hexo/</div>
+      <div>Hexo文章Front-matter编写规则</div>
+      <div>http://tblog.zh-ti.top/2023/12/27/hexo-front-matter/</div>
     </div>
     <div class="license-meta">
       
@@ -337,7 +355,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2023年12月26日</div>
+          <div>2023年12月27日</div>
         </div>
       
       
@@ -373,8 +391,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2023/12/18/tamplates/" title="不错的Hexo模板">
-                        <span class="hidden-mobile">不错的Hexo模板</span>
+                      <a href="/2023/12/27/hello-tblog/" title="Hello, TBlog!">
+                        <span class="hidden-mobile">Hello, TBlog!</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
