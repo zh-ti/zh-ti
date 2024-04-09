@@ -2,7 +2,7 @@
   BannerVideo = "banner.mp4";
 
   // 视频banner
-  banner = document.querySelector("#banner");
+  const banner = document.querySelector("#banner");
   let isPlayVideo = true && location.pathname === "/";
   // let isPlayVideo = JSON.parse(localStorage.getItem("play-video"));
   if (isPlayVideo) {
@@ -19,4 +19,10 @@
     banner.prepend(bannerVideo);
     bannerVideo.play();
   }
+
+  const mail = document.querySelector(".icon-mail");
+  mail.addEventListener("click", (e) => {
+    e.preventDefault();
+    return false;
+  });
 })();
