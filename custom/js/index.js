@@ -1,6 +1,4 @@
 (function () {
-  BannerVideo = "banner.mp4";
-
   // 视频banner
   const banner = document.querySelector("#banner");
   let isPlayVideo = true && location.pathname === "/";
@@ -12,12 +10,17 @@
     bannerVideo.loop = true;
     bannerVideo.muted = true;
     bannerVideo.classList.add("banner-video");
-    bannerSource = document.createElement("source");
-    bannerSource.src = `/videos/${BannerVideo}`;
-    bannerSource.type = "video/mp4";
-    bannerVideo.appendChild(bannerSource);
+    bannerVideo.appendChild(createSourceNode('/videos/banner.mp4', 'video/mp4'));
+    bannerVideo.appendChild(createSourceNode('/videos/banner.mov', 'video/mp4'));
     banner.prepend(bannerVideo);
     bannerVideo.play();
+  }
+
+  function createSourceNode(src, type) {
+    let bannerSource = document.createElement("source");
+    bannerSource.src = src;
+    bannerSource.type = type;
+    return bannerSource;
   }
 
   const mail = document.querySelector(".icon-mail");

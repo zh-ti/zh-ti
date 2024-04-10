@@ -312,24 +312,6 @@
   
     
     <div class="card col-lg-4 col-md-6 col-sm-12">
-      <a href="https://www.weisay.com/blog/" class="card-body hover-with-bg" target="_blank" rel="noopener">
-        <div class="card-content">
-          
-            <div class="link-avatar my-auto">
-              <img src="https://img.weisay.com/weiimg/article/3_1.jpg" srcset="/img/loading.gif" lazyload alt="威言威语"
-                   onerror="this.onerror=null; this.src=this.srcset='/img/avatar.png'"/>
-            </div>
-          
-          <div class="link-text">
-            <div class="link-title">威言威语</div>
-            <div class="link-intro">我愿像茶，苦涩留心，清香予人。</div>
-          </div>
-        </div>
-      </a>
-    </div>
-  
-    
-    <div class="card col-lg-4 col-md-6 col-sm-12">
       <a href="https://blog.meekdai.com/" class="card-body hover-with-bg" target="_blank" rel="noopener">
         <div class="card-content">
           
@@ -405,9 +387,42 @@
 
   <!-- Custom -->
   <div class="custom mx-auto">
-    <hr><p>友链申请发送到邮箱：zhti536428@163.com，按如下格式提供信息：</p><ul><li>博客名：TBlog</li><li>简&emsp;介：A Developer And Penetrator.</li><li>链&emsp;接：https://tblog.zh-ti.top</li><li>图&emsp;标：https://tblog.zh-ti.top/images/avatar.png（也可以通过邮件附件的方式发送给我）</li></ul>
+    <hr><p>友链申请通过此页评论区发送，按如下格式提供信息：</p><ul><li>博客名：TBlog</li><li>简&emsp;介：A Developer And Penetrator.</li><li>链&emsp;接：https://tblog.zh-ti.top</li><li>图&emsp;标：https://tblog.zh-ti.top/images/avatar.png</li></ul>
   </div>
 
+
+
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="twikoo"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#comments', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/twikoo/1.6.8/twikoo.all.min.js', function() {
+        var options = Object.assign(
+          {"envId":"https://tblog-comments-vercel-aix2qz1c7-zh-tis-projects.vercel.app","region":"ap-shanghai","path":"window.location.pathname"},
+          {
+            el: '#twikoo',
+            path: 'window.location.pathname',
+            onCommentLoaded: function() {
+              Fluid.utils.listenDOMLoaded(function() {
+                var imgSelector = '#twikoo .tk-content img:not(.tk-owo-emotion)';
+                Fluid.plugins.imageCaption(imgSelector);
+                Fluid.plugins.fancyBox(imgSelector);
+              });
+            }
+          }
+        )
+        twikoo.init(options)
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
 
 
 
